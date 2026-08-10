@@ -15,6 +15,17 @@ https://movie-suggest-production-bdc5.up.railway.app
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+![Movie Suggest Homepage](screenshots/homepage.png)
+
+### 🎬 Recommendation Results
+
+![Movie Recommendations](screenshots/response.png)
+---
+
 ## ✨ Features
 
 - 🎬 **Movie Recommendations** — Get 10 similar movies for a selected movie.
