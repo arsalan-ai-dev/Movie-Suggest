@@ -27,9 +27,19 @@ movie-recommender/
 └── screenshots/            # Application screenshots
     ├── homepage.png        # Main dashboard
     └── response.png        # Recommendations view
+---
 
+## 🚀 How to Run Locally
 
+### Prerequisites
+- Python 3.10 or higher
+- TMDB API key (free)
 
+### Installation
 
+1. **Clone the repository**:
+   ```bash
+git clone https://github.com/arsalan-ai-dev/Movie-Suggest.git
+cd Movie-Suggest
 
 
