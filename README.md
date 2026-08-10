@@ -1,45 +1,81 @@
-# 🍿 Movie Suggest
+# 🍿 Movie Suggest — AI Movie Recommendation System
 
-A content-based movie recommendation system. Pick a movie and get 10 similar recommendations with posters and ratings.
+A content-based movie recommendation system that recommends similar movies based on their plot descriptions.
 
-🔗 **Live Demo**: [Movie Suggest Live](https://movie-suggest-production-bdc5.up.railway.app)
+The system uses **TF-IDF vectorization** and **Cosine Similarity** to identify movies with similar content and integrates the **TMDB API** to display live movie posters and ratings.
+
+---
+
+## 🚀 Live Demo
+
+🎬 **Live Application:**  
+https://movie-suggest-production-bdc5.up.railway.app
+
+> Deployed on Railway with an interactive Streamlit interface.
 
 ---
 
 ## ✨ Features
 
-- **10 Similar Movie Recommendations**: Uses TF-IDF vectorization and Cosine Similarity on 5,000+ movie plot summaries.
-- **Year Filter**: Filter recommendations by release year range (1960–2026).
-- **Live Movie Data**: Fetches real-time movie posters and ratings via the TMDB API.
-- **Interactive UI**: Built with Streamlit for a seamless, responsive user experience.
-- **24/7 Cloud Deployment**: Hosted on Railway with instant inference response times.
+- 🎬 **Movie Recommendations** — Get 10 similar movies for a selected movie.
+- 🧠 **TF-IDF Vectorization** — Converts movie descriptions into numerical feature vectors.
+- 📐 **Cosine Similarity** — Measures similarity between movies.
+- 📅 **Year Filter** — Filter recommendations by release year.
+- ⭐ **Live Ratings** — Retrieves current movie ratings from TMDB.
+- 🖼️ **Movie Posters** — Displays movie posters using the TMDB API.
+- 🖥️ **Interactive UI** — Built with Streamlit.
+- ☁️ **Cloud Deployment** — Deployed on Railway.
 
 ---
 
-## 📂 Project Structure
+## 🏗️ System Architecture
 
 ```text
-movie-recommender/
-├── app.py                  # Main Streamlit application
-├── movies_metadata.csv     # Dataset (5,000+ movies)
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── screenshots/            # Application screenshots
-    ├── homepage.png        # Main dashboard
-    └── response.png        # Recommendations view
----
-
-## 🚀 How to Run Locally
-
-### Prerequisites
-- Python 3.10 or higher
-- TMDB API key (free)
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-git clone https://github.com/arsalan-ai-dev/Movie-Suggest.git
-cd Movie-Suggest
+                    +----------------------+
+                    |        User          |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Streamlit Interface  |
+                    |   Select a Movie      |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    |   Movie Dataset      |
+                    |  Movie Plot/Summary  |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    |  TF-IDF Vectorizer   |
+                    | Text → Feature       |
+                    |       Vectors        |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Cosine Similarity    |
+                    | Compare Movie        |
+                    | Feature Vectors      |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Top 10 Similar Movies |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    |      TMDB API        |
+                    | Posters + Ratings    |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Recommended Movies   |
+                    | Posters + Ratings    |
+                    +----------------------+
 
 
