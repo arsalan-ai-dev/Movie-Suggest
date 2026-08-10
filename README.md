@@ -2,7 +2,7 @@
 
 A content-based movie recommendation system. Pick a movie and get 10 similar recommendations with posters and ratings.
 
-🔗 **Live Demo**: https://movie-suggest-production-bdc5.up.railway.app
+🔗 **Live Demo**: [Movie Suggest Live](https://movie-suggest-production-bdc5.up.railway.app)
 
 ---
 
@@ -29,6 +29,25 @@ A content-based movie recommendation system. Pick a movie and get 10 similar rec
 ---
 
 ## 📂 Project Structure
+
+```text
+movie-recommender/
+├── app.py                  # Main Streamlit application
+├── movies_metadata.csv     # Dataset (5,000+ movies)
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+└── screenshots/            # Application screenshots
+    ├── homepage.png        # Main dashboard
+    └── response.png        # Recommendations view
+📸 Screenshots
+Main Dashboard
+https://screenshots/homepage.png
+
+Recommendations View
+https://screenshots/response.png
+
+
+
 
 
 
