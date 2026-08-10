@@ -16,18 +16,6 @@ A content-based movie recommendation system. Pick a movie and get 10 similar rec
 
 ---
 
-## 🛠️ Tech Stack
-
-| Component | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Frontend** | Streamlit | Interactive web UI |
-| **ML/NLP** | Pandas, scikit-learn | Data processing, TF-IDF, Cosine Similarity |
-| **API Integration** | Requests, TMDB API | Fetch posters and ratings |
-| **Deployment** | Railway | 24/7 cloud hosting |
-| **Version Control** | Git, GitHub | Code hosting |
-
----
-
 ## 📂 Project Structure
 
 ```text
@@ -39,12 +27,6 @@ movie-recommender/
 └── screenshots/            # Application screenshots
     ├── homepage.png        # Main dashboard
     └── response.png        # Recommendations view
-📸 Screenshots
-Main Dashboard
-https://screenshots/homepage.png
-
-Recommendations View
-https://screenshots/response.png
 
 
 
